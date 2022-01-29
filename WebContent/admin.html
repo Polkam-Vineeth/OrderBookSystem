@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ 
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>admin</title>
+ <style>
+ *{
+ padding: auto;
+ padding-left: 20px;
+ padding-right:20px ;
+ margin: auto;
+ align-items: center;
+
+ }
+ .center {
+ margin: auto;
+ width: 60%;
+ padding: auto;
+ text-align: center;
+ }
+ 
+ </style>
+ </head>
+ <body>
+ 
+ <div class="center">
+ <h1>ONILNE STOCK EXCUTION</h1>
+ <br>
+ <h2>ADMIN PAGE</h2>
+ </div>
+ 
+ 
+ 
+ <br>
+ <div class="center"> 
+ 
+ <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+ <button type="button" class="btn btn-success">Open Market</button>
+ <button type="button" class="btn btn-danger">Close Market</button>
+ </div>
+ 
+<div class="btn-group">
+ <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+ SELECT STOCK
+ </button>
+ <ul class="dropdown-menu">
+ <li><a class="dropdown-item" href="#">DBS</a></li>
+ <li><a class="dropdown-item" href="#">JP MORGAN</a></li>
+ <li><a class="dropdown-item" href="#">RELAINCE</a></li>
+ <li><a class="dropdown-item" href="#">APPOLO TYRES</a></li>
+ <li><a class="dropdown-item" href="#">JIO</a></li>
+ </ul>
+ </div>
+ </div>
+<br>
+<br>
+<br>
+
+<div>
+ <form action="">
+ <label for="from">From</label>
+ <input type="date" id="from" name="from">
+ <label for="to">To</label>
+ <input type="date" id="to" name="to">
+ <input type="submit" class="btn btn-primary" value="Show Orders">
+ </form>
+ </div>
+ 
+<br>
+<br>
+ <table class="table">
+ <thead>
+ <tr>
+ 
+ <th scope="col">S.No</th>
+ <th scope="col">Stock Name</th>
+ <th scope="col">Order Qty</th>
+ <th scope="col">Order Type</th>
+ <th scope="col">Excuted Qty</th>
+ <th scope="col">Price</th>
+ <th scope="col">Order Status</th>
+ <th scope="col">Order Date</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <th scope="row">1</th>
+ <td>DBS</td>
+ <td>50</td>
+ <td>Limit</td>
+ <td>0</td>
+ <td>150</td>
+ <td>Placed</td>
+ <td>19-DEC-2021</td>
+ </tr>
+ <tr>
+ <th scope="row">2</th>
+ <td>DBS</td>
+ <td>50</td>
+ <td>Market</td>
+ <td>0</td>
+ <td> </td>
+ <td>Placed</td>
+ <td>20-DEC-2021</td>
+ </tr>
+ <tr>
+ <th scope="row">1</th>
+ <td>DBS</td>
+ <td>50</td>
+ <td>Limit</td>
+ <td>0</td>
+ <td>140</td>
+ <td>Placed</td>
+ <td>19-DEC-2021</td>
+ </tr>
+ </tbody>
+ </table>
+<br>
+<br>
+ <div>
+ <form action="">
+ <label for="qty">Execution Qty</label>
+ <input type="number" id="qty" name="qty">
+ <label for="to">Execution Price</label>
+ <input type="number" id="price" name="price">
+ <input type="submit" value="Execute Orders" class="btn btn-primary">
+ </form>
+ </div>
+
+ 
+ 
+ </body>
+</html>

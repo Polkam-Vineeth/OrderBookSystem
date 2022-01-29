@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>SignUP</title>
+    <!-- Required meta tags -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 10px;
+      text-align: center;
+    }
+    .vin{
+      display: flex;
+      justify-content: center;
+
+    }
+    table {
+      margin: 0 auto;
+      width: 100%;
+    }
+    #list{
+      display: none;
+      margin: 0 auto;
+      border: none;
+    }
+  </style>
+
+
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center font-weight-bold">Customer Registration </h1>
+      <div class="ml-3 mr-3 mb-3 mt-3 mx-auto" style="width: 600px;">
+        <div class="card card-signup-form bg-danger text-white">
+          
+              <form class="form-container" action="RegistrationServlet" action="post">
+                  <div class="form-group">
+                      
+                      <span ><i class="fa fa-user"></i></span>
+                      <label> User Name</label>
+                  <input type="text"  class="form-control" placeholder="Username" class="fa fa-user"  name="user">
+                  
+                  </div>
+                  <div class="form-group">
+                      <span ><i class="fa fa-lock"></i></span>
+                      <label> Password</label>
+                      <input type="password" class="form-control" placeholder="Password" name="pwd">
+                  </div>
+                  <div class="form-group">
+                      <span ><i class="fa fa-user"></i></span>
+                      <label> FullName</label>
+                      <input type="text" class="form-control" placeholder="Fullname" name="fname">
+                  </div>
+                  <div class="form-group">
+                      <span ><i class="fa fa-envelope"></i></span>
+                      <label> Email</label>
+                      <input type="text" class="form-control" placeholder="E-Mail" name="email">
+                  </div>
+                  <div class="form-group">
+                      <span ><i class="fa fa-envelope"></i></span>
+                      <label> Phone Number</label>
+                      <input type="text" class="form-control" placeholder="Phone Number" name="phno">
+                  </div>
+                  <button type="submit" class="btn btn-dark btn-block">Submit</button>
+                 </form>
+          </div>
+      </div>
+    </div>
+  
+</body>
+  </body>
+</html>
